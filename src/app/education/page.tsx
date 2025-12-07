@@ -1,78 +1,42 @@
 import Image from "next/image"; 
 import Link from "next/link";
 
-export default function Home() {
+export default function CdcPage() {
   return (
- <div id="Pictures" className="mt-10 fixed left-20 top-15">
-         <Image
-           src="/GradPic.jpg"
-           alt="Graduation Picture"
-           width={250}
-           height={250}
-           className="rounded-full"
-         />
-      
-   <div className=" fixed top-30 right-150 text-center">
-      <h1 id="title" className="text-3xl font-bold">
-       Elementary
-      </h1>
+   
+    <div className="p-6 space-y-10">
 
-<h1
-        id="body"
-        className="text-sm  fixed top-40 right-85 text-center"
-      >
-        A Student Athlete, currently studying in Naga College Foundation Inc.
-      </h1>
- </div>
- <div className=" fixed top-50 right-123 text-right">
-      <h1 id="title" className="text-3xl font-bold">
-       Junior High School
-      </h1>
+      <Link href="Me">
+      <button className="px-4 py-2 bg-black text-white rounded-full">
+         Back
+        </button>
+      </Link>
 
-<h1
-        id="body"
-        className="text-sm text-left fixed top-60  end-right-150 start-left-50 "
-      >
-        I studies at Camarines Sur 
-        National High School,
-        I was under Special Program 
-        in the Arts Curriculum.
-        That is when my love grows
-        for dancing.
-       
-      </h1>
- </div>
-  <div className=" fixed top-75 right-123 text-right">
-      <h1 id="title" className="text-3xl font-bold">
-       Senior High School
-      </h1>
+  
+  <div className="bg-gray-100 p-6 rounded-xl flex justify-center gap-6">
+    <img src="/GradPic.JPG" className="w-40 h-40 object-cover rounded-lg" />
+    <img src="/graduate.jpg" className="w-40 h-40 object-cover rounded-lg" />
+    <img src="/nor.jpg" className="w-40 h-40 object-cover rounded-lg" />
+  </div>
 
-<h1
-        id="body"
-        className="text-sm text-left fixed top-85  end-right-150 start-left-50 "
-      >
-        When I was in Senior High School
-        I studied at Naga College Foundation Inc.
-        Studying in this school, I started to join
-        events that helps me to boost my confidence
-        but not just that I also earn honor medals
-        to give back to my parents hardwork.
-       
-      </h1>
- </div>
 
-     <div className="flex gap-4 mt-8">
-     <Link href="/contact">
-          <button className="group inline-block bg-[#0e3321] text-white text-medium px-5 py-4 w-[150px] rounded cursor-pointer">
-            <span className="inline-block relative transition-all duration-500">
-              Contact
-              <span className="opacity-0 -right-5 absolute transition-all duration-500 group-hover:opacity-100 group-hover:right-0">
-                »
-              </span>
-            </span>
-          </button>
-        </Link>
-        </div>
-        </div>
+  <div className="bg-gray-100 p-6 rounded-xl flex justify-center gap-6">
+    <img src="/award.jpg" className="w-40 h-40 object-cover rounded-lg" />
+    <img src="/epek.jpg" className="w-40 h-40 object-cover rounded-lg" />
+    <img src="/with.jpg" className="w-40 h-40 object-cover rounded-lg" />
+  </div>
+
+
+  <p className="max-w-3xl mx-auto text-center leading-relaxed text-gray-800">
+    I graduated from Senior High School with academic distinction, but to me it’s more
+    than just an award, it’s my way of giving back to my parents who worked hard to 
+    support us. A reminder to my fellow Sports Track students that we are not just 
+    athletes but hardworking learners who can excel academically, a proof to those who 
+    doubted me that I can balance my extra curricular, responsibilities, and my studies,
+    and a proud moment knowing that the motivation I left behind now inspires others as
+    I set a record of Top 1 in the entire Sports Track in my Senior High School year.
+  </p>
+
+</div>
   );
 }
